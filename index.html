@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1W5L1</title>
+</head>
+
+<body>
+    <script>
+
+        var question = prompt("Is de kaas geel?").toLocaleLowerCase();
+        if (question === "ja") {
+            question = prompt("Zitten er gaten in?").toLocaleLowerCase();
+            if (question === "ja") {
+                question = prompt("Is de kaas belahcelijk duur?").toLocaleLowerCase();
+                if (question === "ja") {
+                    alert("Wij vermoeden dat u de Emmentaler kaas heeft.");
+                } else if (question === "nee") {
+                    alert("Wij vermoeden dat u de Leerdammer kaas heeft.");
+                }
+            } else if (question === "nee") {
+                question = prompt("is de kaas hard als steen?").toLocaleLowerCase();
+                if (question === "ja") {
+                    alert("Wij vermoeden dat u de parmigiano reggiano kaas heeft.");
+                } else if (question === "nee") {
+                    alert("Wij vermoeden dat u de Goudse kaas heeft.");
+                }
+            }
+        } else if (question === "nee") {
+            question = prompt("Heeft de kaas blauwe schimmels?").toLocaleLowerCase();
+            if (question === "ja") {
+                question = prompt("Heeft de kaas een korst?").toLocaleLowerCase();
+                if (question === "ja") {
+                    alert("Wij vermoeden dat u de bleu de rochebaron heeft.");
+                } else if (question === "nee") {
+                    alert("Wij vermoeden dat u de fourme d'ambert heeft.");
+                }
+
+            } else if (question === "nee") {
+                question = prompt("Heeft de kaas een korst?").toLocaleLowerCase();
+                if (question === "ja") {
+                    alert("Wij vermoeden dat u de camembert heeft.");
+                } else if (question === "nee") {
+                    alert("Wij vermoeden dat u de fourme mozzarella heeft.");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
