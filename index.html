@@ -10,18 +10,18 @@
 <body>
     <script>
 
-        var question = prompt("Is de kaas geel?").toLocaleLowerCase();
+        var question = prompt("Is de kaas geel?").toLowerCase();
         if (question === "ja") {
-            question = prompt("Zitten er gaten in?").toLocaleLowerCase();
+            question = prompt("Zitten er gaten in?").toLowerCase();
             if (question === "ja") {
-                question = prompt("Is de kaas belahcelijk duur?").toLocaleLowerCase();
+                question = prompt("Is de kaas belahcelijk duur?").toLowerCase();
                 if (question === "ja") {
                     alert("Wij vermoeden dat u de Emmentaler kaas heeft.");
                 } else if (question === "nee") {
                     alert("Wij vermoeden dat u de Leerdammer kaas heeft.");
                 }
             } else if (question === "nee") {
-                question = prompt("is de kaas hard als steen?").toLocaleLowerCase();
+                question = prompt("is de kaas hard als steen?").toLowerCase();
                 if (question === "ja") {
                     alert("Wij vermoeden dat u de parmigiano reggiano kaas heeft.");
                 } else if (question === "nee") {
@@ -29,9 +29,9 @@
                 }
             }
         } else if (question === "nee") {
-            question = prompt("Heeft de kaas blauwe schimmels?").toLocaleLowerCase();
+            question = prompt("Heeft de kaas blauwe schimmels?").toLowerCase();
             if (question === "ja") {
-                question = prompt("Heeft de kaas een korst?").toLocaleLowerCase();
+                question = prompt("Heeft de kaas een korst?").toLowerCase();
                 if (question === "ja") {
                     alert("Wij vermoeden dat u de bleu de rochebaron heeft.");
                 } else if (question === "nee") {
@@ -39,7 +39,7 @@
                 }
 
             } else if (question === "nee") {
-                question = prompt("Heeft de kaas een korst?").toLocaleLowerCase();
+                question = prompt("Heeft de kaas een korst?").toLowerCase();
                 if (question === "ja") {
                     alert("Wij vermoeden dat u de camembert heeft.");
                 } else if (question === "nee") {
